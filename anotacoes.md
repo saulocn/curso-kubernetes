@@ -34,7 +34,7 @@ E para remover todos os clusters e perfis:
 
 ## Kubectl
 
-O comando onipresente para descobrir algo no seu cluster é o kubectl get <nome-do-recurso>
+O comando onipresente para descobrir algo no seu cluster é o `kubectl get <nome-do-recurso>`
 
 Um recurso é um pod, deployment, node entre vários outros que veremos ainda.
 
@@ -55,13 +55,17 @@ Isso também funciona para outros recursos como pod (e outros recursos com deplo
 Informações sobre os pods, service, deployments etc recebemos pelo comando kubectl get ..., por exemplo:
 
 `kubectl get pods`
+
 `kubectl get deployments`
+
 `kubectl get services`
 
 e
 
 `kubectl get pod <nome-do-pod>`
+
 `kubectl get deployment <nome-do-deployment>`
+
 `kubectl get service <nome-do-service>`
 
 Usando o flag '-o wide' recebemos mais infos:
@@ -70,10 +74,11 @@ Usando o flag '-o wide' recebemos mais infos:
 
 Informações mais detalhadas conseguimos pelo comando describe:
 
-##detalhes sobre todos os pods
+detalhes sobre todos os pods
+
 `kubectl describe pods`
 
-##detalhes de um pod especifico
+detalhes de um pod especifico
 `kubectl describe pod <nome-do-pod>`
 
 Por fim, podemos ver os logs de um Pod com o comando:
