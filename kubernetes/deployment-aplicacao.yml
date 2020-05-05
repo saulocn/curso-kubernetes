@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
         - name: container-aplicacao
-          image: saulocn/noticia-alura:1
+          image: saulocn/noticia-alura:2
           ports:
             - containerPort: 80
