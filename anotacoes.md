@@ -113,3 +113,9 @@ para remover um deployment
 
 para remover um service
 `kubectl delete service <nome-service>`
+
+Para criar um autoscaling baseado em CPU
+`kubectl autoscale deployment  aplicacao-noticia-deployment --cpu-percent=20 --min=1 --max=10`
+
+Para remover o autoscaling
+`kubectl delete hpa aplicacao-noticia-deployment`

@@ -12,7 +12,10 @@ spec:
         name: aplicacao-noticia-pod
     spec:
       containers:
-        - name: container-aplicacao
+        - name: container-aplicacao-cpu
           image: saulocn/noticia-alura:2
+          resources:
+              requests:
+                cpu: 400m
           ports:
             - containerPort: 80
