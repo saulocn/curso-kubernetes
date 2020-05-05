@@ -14,9 +14,13 @@ spec:
     spec:
       containers:
         - name: container-aplicacao-sistema-statefulset
-          image: saulocn/sistema-noticia-alura:1
+          image: saulocn/sistema-noticia-alura:2
           ports:
             - containerPort: 80
+          lifecycle:
+              postStart:
+                exec:
+                  command: ["sh", "enviar_mensagem.sh"]
           volumeMounts:
             - name: imagens
               mountPath:  /var/www/html/uploads
