@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
         - name: container-aplicacao
-          image: jnlucas/image-phpmysql:latest
+          image: saulocn/noticia-alura:1
           ports:
             - containerPort: 80

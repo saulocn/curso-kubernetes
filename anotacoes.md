@@ -79,9 +79,37 @@ detalhes sobre todos os pods
 `kubectl describe pods`
 
 detalhes de um pod especifico
+
 `kubectl describe pod <nome-do-pod>`
 
 Por fim, podemos ver os logs de um Pod com o comando:
 
 `kubectl logs <nome-pod-name>`
 
+
+para listar os pods
+`kubectl get pods`
+
+tbm funcionar para deployments e services, por exemplo:
+`kubectl get services`
+
+para detalhes de um pod
+`kubectl describe pod <nome-pod>`
+
+o comando describe tbm funciona para deployment e service, por exemplo:
+`kubectl describe service <nome>`
+
+para criar pod, deployment ou service a partir de um arquivo yml
+`kubectl create -f <nome-arquivo-yml>`
+
+para remover pod, deployment ou service a partir de um arquivo yml
+`kubectl delete -f <nome-arquivo-yml>`
+
+para remover um pod
+`kubectl delete pod <nome-pod>`
+
+para remover um deployment
+`kubectl delete deployment <nome-deployment>`
+
+para remover um service
+`kubectl delete service <nome-service>`
