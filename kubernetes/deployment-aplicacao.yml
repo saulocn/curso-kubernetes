@@ -17,5 +17,6 @@ spec:
           resources:
               requests:
                 cpu: 400m
+                memory: "8Mi"
           ports:
             - containerPort: 80

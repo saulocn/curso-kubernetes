@@ -119,3 +119,6 @@ Para criar um autoscaling baseado em CPU
 
 Para remover o autoscaling
 `kubectl delete hpa aplicacao-noticia-deployment`
+
+Para verificar se a métrica está habilitada
+`kubectl get apiservice v1beta1.metrics.k8s.io`
