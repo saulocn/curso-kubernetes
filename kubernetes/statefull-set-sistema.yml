@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: container-aplicacao-sistema-statefulset
-          image: saulocn/sistema-noticia-alura:2
+          image: saulocn/sistema-noticia-alura:3
           ports:
             - containerPort: 80
           lifecycle:
